@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>To Do App</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__left">
+          <h1 class="header__title">Todo List</h1>
+        </div><!--end header__left-->
+
+        <ul class="header__right nav">
+          <li class="nav__li">
+            <button class="nav-button nav-button--all nav-button--current">
+              All
+            </button>
+          </li>
+          <li class="nav__li">
+            <button class="nav-button nav-button--active">Active</button>
+          </li>
+          <li class="nav__li">
+            <button class="nav-button nav-button--completed">
+              Completed
+            </button>
+          </li>
+        </ul><!--end header__right-->
+      </div><!--end header-->
+
+      <form>
+        <input type="text" placeholder="What needs to be done?" />
+        <button type="submit" class="button button--add">+</button>
+      </form>
+
+      <ul class="list list--all">
+        
+     
+      </ul><!--end list-->
+
+      <div class="emptySpace"></div>
+      <footer class="footer">
+        <div class="footer__left"><p class="items-left"></p></div>
+        <div class="footer__right">
+          <button class="button-clear-completed">Clear completed</button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
